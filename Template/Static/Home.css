@@ -15,7 +15,7 @@ html, body {
 
 body {
   background-color: #000000;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .ocean {
@@ -91,11 +91,11 @@ body {
   padding: 5px;
 }
 
-.nav p {
+.nav a {
   position: relative;
 }
 
-.nav p::before {
+.nav a::before {
   content: "";
   position: absolute;
   bottom: -2px; 
@@ -106,12 +106,12 @@ body {
   transition: width 0.3s ease;
 }
 
-.nav p:hover::before {
+.nav a:hover::before {
   width: 100%;
 }
 
 
-.nav p:hover::before {
+.nav a:hover::before {
   width: 100%;
 }
 
@@ -119,6 +119,7 @@ body {
   display: flex;
   width: 20vw;
   font-size: 1.5vw;
+  align-items: center;
   justify-content: space-around;
 }
 .logo{
@@ -172,5 +173,8 @@ body {
   }
 }
 
-
-
+a{
+  color: snow;
+  text-decoration: none;
+  
+}
