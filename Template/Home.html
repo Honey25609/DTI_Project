@@ -6,13 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Study Buddy</title>
     <link rel="stylesheet" href="./Static/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        
+    </script>
     <div class="main">
         <div class="nav">
             <p class="logo">Study Brainiac</p>
             <div class="right">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="Signin.html">Sign in</a>
+                    <a href="Login.html">Log in</a>
+                  </div>
+                  <span onclick="openNav()"><i class="fa fa-bars" style="font-size:3vw;color:snow"></i></span>
+                  <div id="main">
+                  </div>
                 <a href="Signin.html">Sign in</a>
                 <a href="Login.html">Log in</a>
             </div>

@@ -177,3 +177,71 @@ a{
   color: snow;
   text-decoration: none;
 }
+
+.sidenav,span {
+  display: none;
+}
+
+@media(max-width: 767px) {
+  a{
+    display: none;
+  }
+  /* The side navigation menu */
+
+  span{
+    display: block;
+  }
+.sidenav {
+  display: block;
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 12; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 75vw;
+  background-color: #111111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 2.5vw;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: -4vw;
+  font-size: 5vw;
+}
+
+
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+#main {
+  transition: margin-right .5s;
+  padding: 20px;
+}
+
+.Name{
+  font-size: 25vw;
+  margin: 10vw;
+}
+
+.tag{
+  font-size: 7vw;
+}
+
+}
+
+
+
