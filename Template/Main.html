@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Buddy</title>
+    <link rel="stylesheet" href="./Static/Main.css">
+    <script>
+        var flag = true;
+        function ToggleNav() {
+          if(flag == false){
+            document.getElementById("mySidenav").style.width = "15vw";
+            flag = true;
+          }
+          else if(flag == true){
+            document.getElementById("mySidenav").style.width = "0";
+            flag = false;
+          }
+        }     
+    </script>
+</head>
+<body>
+    <div class="all">
+        <div>
+            <div id="mySidenav" class="sidenav">
+                <p>Chats</p>
+                <p>User</p>
+            </div>
+            <span onclick="ToggleNav()">STUDY BRAINIAC</i></span>
+            <div id="main">
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="start">
+                <h2>Welcome to</h2>
+                <h1>Study Buddy</h1>
+                <h2>your AI buddy for studies.</h2>
+            </div>
+            <div class="start_tag">
+                <h3>How can i help you?</h3>
+                <input type="text" class="text" placeholder="Write yout question here...">
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
